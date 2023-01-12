@@ -1,0 +1,115 @@
+img {
+  max-height: 5rem;
+  max-width: 5rem;
+}
+
+.admin-question {
+  background-color: white;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  min-width: 30%;
+}
+
+.nombre-imagen p {
+  transition: 0.2s;
+}
+
+.nombre-imagen img {
+  width: 1000px;
+}
+
+.imgProd {
+  display: flex;
+  justify-content: center;
+}
+
+.nombre-imagen {
+  background-color: #edeff0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 150px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.nombre-imagen p {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  margin: 0.5rem;
+}
+
+.admin-question button {
+  --bg: #000;
+  --hover-bg: #ffffff;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: bold;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.admin-question button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.admin-question button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.admin-question input {
+  padding: 0.25rem;
+  padding-left: 1rem;
+}
+
+.name-delete-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.card-name {
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+}
+
+.name-delete-container button {
+  padding: 0;
+  margin: 0;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  border-radius: 10%;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nombre-imagen p {
+    font-size: 15px;
+  }
+}
